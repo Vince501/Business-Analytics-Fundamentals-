@@ -25,7 +25,7 @@ fileCopy('a.txt', 'b.txt')
 
 ##
 import pandas as pd
-df = pd.read_csv('Class files\popgdp.csv')
+df = pd.read_csv('popgdp.csv')
 df
     
 df['gdppercap'] = round(df.gdp / df.population * 1000000)
@@ -36,6 +36,6 @@ gdppercap
 g2 = gdppercap.transpose()
 
 #
-df1 = pd.read_csv('Class files\gdp.csv')
+df1 = pd.read_csv('gdp.csv')
 df1
 df1.melt(id_vars='year', var_name='country')
